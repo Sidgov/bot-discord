@@ -2,11 +2,10 @@
   "name": "bot-discord",
   "version": "1.0.0",
   "description": "Bot pour discord",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node serv.bot.js",
-    "serve": "nodemon serv/bot.js"
+    "start": "node ./server/bot.js",
+    "serve": "nodemon ./server/bot.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +18,10 @@
   },
   "homepage": "https://github.com/Sidgov/bot-discord#readme",
   "dependencies": {
-    "discord.js": "^12.3.1"
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
